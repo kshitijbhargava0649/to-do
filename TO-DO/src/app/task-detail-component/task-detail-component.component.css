@@ -29,3 +29,14 @@
     position: relative;
     left: 20%
   }
+
+  /* date  */
+  #dateInput{
+    position: relative;
+    left:10%;
+    box-shadow : 2px 2px 4px rgba(0, 0, 0, 0.2);
+    width: 50%; /* Adjust the width as needed */
+    height: 20%; /* Adjust the height as needed */
+    border: 1px solid #ccc;
+    border-radius: 8px; 
+  }
