@@ -2,24 +2,23 @@
 #myTextField {
     position: relative;
     left: 30%;
-    top:3%;
-    transform: translateX(0%);
+    top:10%;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     width: 200px; /* Adjust the width as needed */
     height: 30px; /* Adjust the height as needed */
     border: 1px solid #ccc;
-    border-radius: 8px; 
-    align-items: center;
+    border-radius: 8px;
   }
 /* mydivision */
 .myDiv {
+    transition: transform 0.2s; /* Adding transition for smooth effect */
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
     left:0%;
-    width: 90%;
+    width: 80%;
     height: 6px;
     border: 1px solid #ccc;
     border-radius: 10px;
@@ -33,7 +32,7 @@
 #search-button {
   position: relative;
   left: 23%;
-  top:3%;
+  top:10%;
   background-color: #FF7034;
   color: white;
   /* padding: 10px 20px; */
@@ -41,13 +40,18 @@
   border-radius: 5px;
   cursor: pointer;
   font-size: 13px;
+  text-align: center;
 }
 /* addbutton */
 #addButton{
     position: relative;
-    left: 3%;
-    top:13%;
+    left: 40%;
+    top:13%; 
+    align-items: center;
     color: rgb(0, 0, 0);
 }
-  
-  
+
+/* zoom and hover  */
+.zoom-div:hover {
+  transform: scale(1.05); /* Applying scale transform on hover */
+}

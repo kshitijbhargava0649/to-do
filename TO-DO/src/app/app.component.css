@@ -8,7 +8,7 @@ body, html {
 .bg-image {
     /* Set the background image */
     /* Center and scale the image nicely */
-    background-image: url(C:\Users\A7230\Desktop\Angular\to-do\TO-DO\src\assets\bg2.JPG);
+    background-image: url(C:\Users\A7230\Desktop\image.jpg);
     
     /* Full height */
     height: 100vh; 
@@ -30,9 +30,12 @@ body, html {
     background-color: white;
     box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
     border-radius: 15px;
+    overflow: auto;
   }
   
   #my-heading {
+    position:relative;
+    right:3%;
     text-align: center;
     font-family: cursive, sans-serif; /* Set the font to Helvetica with a fallback to a generic sans-serif font */
     font-size: 2.5em; /* Adjust the font size as needed */

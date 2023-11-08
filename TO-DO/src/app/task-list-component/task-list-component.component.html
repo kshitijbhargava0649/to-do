@@ -1,11 +1,10 @@
 <input  id="myTextField"  type="text" [(ngModel)]="searchText" placeholder="Search"/>
 <button id="search-button"> => </button>
-<button id="addButton" routerLink="/task" >Add Task</button>
-
 <br/><br>
-<br>
-<div class="myDiv" *ngFor="let itr of taskList ,let i = index">
+<div class="myDiv zoom-div" *ngFor="let itr of taskList ,let i = index" routerLink="/task">
     {{itr.title}}
     {{itr.description}}
     {{itr.date}}
 </div>
+<br *ngIf="taskList.length>0">
+<button id="addButton" routerLink="/task">Add Task</button>

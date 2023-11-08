@@ -7,6 +7,8 @@ import { TaskListComponentComponent } from './task-list-component/task-list-comp
 import { TaskDetailComponentComponent } from './task-detail-component/task-detail-component.component';
 import { Routes, RouterModule } from '@angular/router';
 import { FormsModule } from '@angular/forms';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 
 
 const routes : Routes = [
@@ -18,13 +20,15 @@ const routes : Routes = [
   declarations: [
     AppComponent,
     TaskListComponentComponent,
-    TaskDetailComponentComponent
+    TaskDetailComponentComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    RouterModule.forRoot(routes)
+    RouterModule.forRoot(routes),
+    BrowserAnimationsModule,
+    MatSnackBarModule
   ],
   providers: [],
   bootstrap: [AppComponent]
