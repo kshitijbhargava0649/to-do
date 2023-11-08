@@ -10,7 +10,9 @@ import { FormsModule } from '@angular/forms';
 
 
 const routes : Routes = [
-  {path : 'task' , component :TaskDetailComponentComponent},
+  {path : '', redirectTo:'/list' , pathMatch: 'full'},
+  {path : 'list' , component :TaskListComponentComponent},
+  {path : 'task' , component :TaskDetailComponentComponent}
 ]
 @NgModule({
   declarations: [

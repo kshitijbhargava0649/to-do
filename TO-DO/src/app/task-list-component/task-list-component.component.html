@@ -1,1 +1,11 @@
-<p>task-list-component works!</p>
+<input  id="myTextField"  type="text" [(ngModel)]="searchText" placeholder="Search"/>
+<button id="search-button"> => </button>
+<button id="addButton" routerLink="/task" >Add Task</button>
+
+<br/><br>
+<br>
+<div class="myDiv" *ngFor="let itr of taskList ,let i = index">
+    {{itr.title}}
+    {{itr.description}}
+    {{itr.date}}
+</div>

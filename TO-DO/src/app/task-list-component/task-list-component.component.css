@@ -1,0 +1,53 @@
+/* searchBar */
+#myTextField {
+    position: relative;
+    left: 30%;
+    top:3%;
+    transform: translateX(0%);
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    width: 200px; /* Adjust the width as needed */
+    height: 30px; /* Adjust the height as needed */
+    border: 1px solid #ccc;
+    border-radius: 8px; 
+    align-items: center;
+  }
+/* mydivision */
+.myDiv {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    left:0%;
+    width: 90%;
+    height: 6px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+    margin: auto;
+  }
+
+/* searchbutton  */
+#search-button {
+  position: relative;
+  left: 23%;
+  top:3%;
+  background-color: #FF7034;
+  color: white;
+  /* padding: 10px 20px; */
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 13px;
+}
+/* addbutton */
+#addButton{
+    position: relative;
+    left: 3%;
+    top:13%;
+    color: rgb(0, 0, 0);
+}
+  
+  

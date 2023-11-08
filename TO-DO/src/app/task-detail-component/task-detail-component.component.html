@@ -1,11 +1,13 @@
 <!-- my-form.component.html -->
 <div>
-    <input class="box" id="myTextField" type="text" [(ngModel)]="textFieldValue" placeholder="Enter Your Title" />
+    <input id="myTextField" type="text" [(ngModel)]="textFieldValue" placeholder="Enter Your Title" />
     <br /><br>
     <textarea id="myTextArea"[(ngModel)]="textAreaValue" rows="4" cols="50" placeholder="Enter the Description" ></textarea>
     <br/><br>
     <input id = "dateInput" type="date" [(ngModel)]= "taskDate" >
     <br/><br>
     <button id="myButton" (click)="onClick()">ClickMe!!!</button>
+    <button class="back-button" routerLink="/list" >
+    </button>
 </div>
   
