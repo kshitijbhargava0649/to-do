@@ -1,7 +1,7 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Inject, Output, inject } from '@angular/core';
 import { DataListService } from '../services/data-list.service';
 import { TaskServiceService } from '../services/task-service.service';
-import { Data } from '@angular/router';
+import { Data, Router } from '@angular/router';
 
 @Component({
   selector: 'app-task-list-component',
@@ -10,9 +10,16 @@ import { Data } from '@angular/router';
 })
 export class TaskListComponentComponent {
   searchText:string='';
-  // taskList:number[]=[1,2,3,4,];
-  // taskList:DataListService[]=this.task.dataList.slice();
-  // constructor(private list:DataListService){}
+  router: Router = inject(Router);
+
+  constructor(private task : TaskServiceService ){}
   taskList:DataListService[]=TaskServiceService.dataList;
   
+  onClick(index:number){
+    this.router.navigate(['/task', index]);
+  }
+
+  onDelete(index:number){
+    TaskServiceService.dataList.splice(index,1);
+  }
 }

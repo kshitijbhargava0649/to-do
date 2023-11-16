@@ -13,6 +13,7 @@ import { MatSnackBar, MatSnackBarModule } from '@angular/material/snack-bar';
 
 const routes : Routes = [
   {path : '', redirectTo:'/list' , pathMatch: 'full'},
+  {path : 'task/:index' , component : TaskDetailComponentComponent},
   {path : 'list' , component :TaskListComponentComponent},
   {path : 'task' , component :TaskDetailComponentComponent}
 ]

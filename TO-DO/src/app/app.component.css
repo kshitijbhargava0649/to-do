@@ -35,7 +35,7 @@ body, html {
   
   #my-heading {
     position:relative;
-    right:3%;
+    right:0%;
     text-align: center;
     font-family: cursive, sans-serif; /* Set the font to Helvetica with a fallback to a generic sans-serif font */
     font-size: 2.5em; /* Adjust the font size as needed */
