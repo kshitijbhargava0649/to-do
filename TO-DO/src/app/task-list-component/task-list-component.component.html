@@ -4,10 +4,10 @@
 </div>
 <br/><br>
 <div class="myDiv zoom-div" *ngFor="let itr of taskList , let i = index"  (click)="onClick(i)">
-    {{itr.title}}
-    {{itr.description}}
+    {{itr.title + ':' }}
+    {{itr.description + ','}}
     {{itr.date}}
-    <button id="addButton" (click)="onDelete(i)">Delete</button>
+    <button class="delete-button" id="addButton" (click)="onDelete(i)">🗑️ </button>
 </div>
 <br *ngIf="taskList.length>0">
 <button id="addButton" routerLink="/task">Add Task</button>

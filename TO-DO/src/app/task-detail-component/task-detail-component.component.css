@@ -1,7 +1,7 @@
   /* TextField Css */
   #myTextField {
     position: relative;
-    left: 27%;
+    left: 29%;
     top:10%;
     box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
     width: 200px; /* Adjust the width as needed */
@@ -14,7 +14,7 @@
   /* TextArea Css */
   #myTextArea {
     position: relative;
-    left: 22%;
+    left: 25%;
     top : 30%;
     box-shadow : 2px 2px 4px rgba(0, 0, 0, 0.2);
     width: 50%; /* Adjust the width as needed */
@@ -29,13 +29,13 @@
   /* Mybutton */
   #myButton{
     position: relative;
-    left: 38%
+    left: 43%;
   }
 
   /* date  */
   #dateInput{
     position: relative;
-    left:35%;
+    left:38%;
     box-shadow : 2px 2px 4px rgba(0, 0, 0, 0.2);
     /* width: 50%; /* Adjust the width as needed */
     /* height: 20%; Adjust the height as needed */ 

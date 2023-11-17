@@ -69,9 +69,10 @@ export class TaskDetailComponentComponent{
       TaskServiceService.dataList[this.index].title = this.textFieldValue ;
       TaskServiceService.dataList[this.index].description=this.textAreaValue;
       TaskServiceService.dataList[this.index].date=this.taskDate;
+      this.openSnackBar('Task Updated successfully', 'Close');
     }
     else{
-      console.log("New Add");
+      this.openSnackBar('Nothing to update', 'Close');
     }
   }
 

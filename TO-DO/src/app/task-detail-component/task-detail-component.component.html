@@ -7,9 +7,9 @@
     <br/><br>
     <input id = "dateInput" type="date" [(ngModel)]= "taskDate" [readonly]="!isEditable">
     <br/><br>
-    <button id="myButton" (click)="onClick()">ClickMe!!!</button>
+    <button id="myButton" (click)="onClick()" *ngIf="!(index >-1)">Add Task</button>
     <button id="myButton" (click)="onClickEdit()" *ngIf="!isEditable">Edit</button>
-    <button id="myButton" (click)="onClickUpdate()" *ngIf="isEditable">Update</button>
+    <button id="myButton" (click)="onClickUpdate()" *ngIf="isEditable && index > -1 ">Update</button>
     <button class="back-button" routerLink="/list" ></button>
 </div>
   
