@@ -78,3 +78,27 @@
 .delete-button:hover {
   background-color: #d53e28;
 }
+
+  /* backbutton */
+
+  .back-button {
+    position: absolute;
+    top: 10px; /* Adjust as needed */
+    left: 10px; /* Adjust as needed */
+    width: 30px; /* Adjust as needed */
+    height: 30px; /* Adjust as needed */
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .back-button::before {
+    content: '\2190'; /* Unicode for left arrow */
+    display: block;
+    color: orangered;
+    font-weight: bold;
+    font-size: 20px; /* Adjust as needed */
+    line-height: 30px; /* Adjust as needed */
+    text-align: center;
+  }

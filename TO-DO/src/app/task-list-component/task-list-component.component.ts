@@ -11,6 +11,7 @@ import { Data, Router } from '@angular/router';
 export class TaskListComponentComponent {
   searchText:string='';
   router: Router = inject(Router);
+  searchOn:boolean = false;
 
   constructor(private task : TaskServiceService ){}
   taskList:DataListService[]=TaskServiceService.dataList;
@@ -21,5 +22,20 @@ export class TaskListComponentComponent {
 
   onDelete(index:number){
     TaskServiceService.dataList.splice(index,1);
+  }
+
+  filterRows() {
+    if(this.searchText.length >0){
+      this.searchOn=true;
+      this.taskList = TaskServiceService.dataList.filter(row => 
+        row.title.toLowerCase().includes(this.searchText.toLowerCase())
+      );
+    }
+  }
+
+  allTasks(){
+    this.taskList=TaskServiceService.dataList;
+    this.searchOn=false;
+    this.searchText='';
   }
 }

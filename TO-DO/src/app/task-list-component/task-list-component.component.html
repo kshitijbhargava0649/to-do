@@ -1,6 +1,7 @@
 <div id="searchDiv"> 
     <input  id="myTextField"  type="text" [(ngModel)]="searchText" placeholder="Search"/>
-    <button id="search-button"> => </button>
+    <button id="search-button" *ngIf="!searchOn" (click) = "filterRows()"> => </button>
+    <button id="search-button" *ngIf="searchOn " (click) = "allTasks()"> X </button>
 </div>
 <br/><br>
 <div class="myDiv zoom-div" *ngFor="let itr of taskList , let i = index"  (click)="onClick(i)">
